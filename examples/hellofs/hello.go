@@ -37,6 +37,7 @@ func main() {
 		fuse.VolumeName("Hello world!"),
 	)
 	if err != nil {
+		fmt.Println("here")
 		log.Fatal(err)
 	}
 	defer c.Close()
